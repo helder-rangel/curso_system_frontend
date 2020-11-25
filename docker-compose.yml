@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    portarias-front:
+        build: .
+        image: portarias-front
+        container_name: portarias-front
+        ports:
+            - 8080:80
+        restart: on-failure
